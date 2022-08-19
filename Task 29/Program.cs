@@ -12,11 +12,10 @@ int numberB = int.Parse(Console.ReadLine());
 void RandArray()
 {
     int [] arr = new int[num];
-
     for(int i=0;i<arr.Length;i++)
     {
         arr[i] = new Random().Next(numberA,numberB);
-         Console.Write("{0} ", arr[i]);
+        Console.Write("{0} ", arr[i]);
     }
     Console.WriteLine($"[{String.Join(",", arr)}]");
 }
